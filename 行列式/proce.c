@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+# define _CRT_SECURE_NO_WARNINGS
 # include <stdio.h>
 # include "head.h"
 # include <stdlib.h>
@@ -30,7 +30,7 @@ double process_four(int arr_four[4][4])
 							    arr_four[1][1] * (arr_four[2][0] * (arr_four[3][2]) - arr_four[3][0] * (arr_four[2][2])) +
 							    arr_four[1][2] * (arr_four[2][0] * (arr_four[3][1]) - arr_four[3][0] * (arr_four[2][1]))));//第四个三阶
 
-	printf("the Resilt is %f\n",Result);
+	//printf("the Resilt is %f\n",Result);
 	return Result;
 }
 void IputThree(int arrThre[3][3])
@@ -54,4 +54,14 @@ void IputFour(int arrFour[4][4])
 		}
 	
 
+}
+void xun(int arr[][5],int n)
+{
+	int i = n;
+	double Result = 0;
+	int k;
+	for (k = 0;k < n;k++)
+	{
+		//Result += arr[k][k] *  
+	}
 }

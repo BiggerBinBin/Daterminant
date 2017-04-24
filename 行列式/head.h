@@ -1,5 +1,5 @@
-double process(int **arr);
-double process_four(int **arr_four);
-void IputThree(int **arr);
-void IputFour(int **arr);
+double process(int arr[][3]);
+double process_four(int arr[][4]);
+void IputThree(int arr[][3]);
+void IputFour(int arr[][4]);
 void output();

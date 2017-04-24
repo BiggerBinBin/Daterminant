@@ -1,9 +1,11 @@
 
 #define _CRT_SECURE_NO_WARNINGS
 # include <stdio.h>
+# include "head.h"
+double Be;
 int arrThree[3][3] = { 0 };
 int arrFour[4][4] = { 0 };
-double Be = 0;
+
 int main()
 {
 	
@@ -19,12 +21,7 @@ int main()
 	{
 	case 4:
 		IputFour(arrFour);
-		
-		printf("before the return re is%f\n",Be);
-		//printf("the re is%f\n", process_four(arrFour));
 		Be = process_four(arrFour);
-		printf("after the return re is%f\n", Be);
-		
 		break;
 	case 3:
 		IputThree(arrThree);
@@ -34,9 +31,10 @@ int main()
 		printf("sorry, I can not able calculate\n");
 		break;
 	}
-	
-	printf("行列式的值是：%f",Be);
-
+	//process_four(arrFour);
+	//Re = process_four(arrFour);
+	//printf("the liner is %lf",Be);
+	printf("after the return re is%f\n", Be);
 	system("pause");
 	return 0;
 }
